@@ -1,0 +1,19 @@
+site_name: Scripta User Documentation
+site_url: https://jxxcarlson.github.io/docs-scripta
+docs_dir: 'docs-scripta'
+
+theme: readthedocs
+
+
+nav:
+  - Home: 'index.md'
+  - 'tour.md'
+  - 'structure.md'
+  - 'inline.md'
+  - 'block.md'
+  - 'folders.md'
+  - 'collections.md'
+  - 'sharing.md'
+  - 'chat.md'
+  - 'mkdocs.md'
+
