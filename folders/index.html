@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://jxxcarlson.github.io/docs-scripta/folders/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Smart Folders - Scripta User Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Smart Folders";
+        var mkdocs_page_input_path = "folders.md";
+        var mkdocs_page_url = "/docs-scripta/folders/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Scripta User Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../tour/">Tour</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../structure/">Document Structure</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../inline/">Inline Elements</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../block/">Blocks</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Smart Folders</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#making-a-smart-folder">Making a smart folder</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#putting-a-document-in-a-smart-folder">Putting a document in a smart folder</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../collections/">Collections</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../sharing/">Sharing documents</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../chat/">Chat</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../mkdocs/">Welcome to MkDocs</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Scripta User Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Smart Folders</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="smart-folders">Smart Folders</h1>
+<p>A Smart Folder is a special kind of document 
+gathers together all the documents with a specific 
+tag.  The smart folder listed below is titled 
+<em>Physics Notes.</em>  It gathers together all the 
+documents with tag <code>"physicsnotes"</code></p>
+<p><img alt="Smart Folder" src="https://i.ibb.co/QMdphTG/image.png" /></p>
+<h2 id="making-a-smart-folder">Making a smart folder</h2>
+<p>To make a smart folder, click on the <strong>Folder</strong> button
+in the header, then fill out the form you see in the 
+screenshot below: give the folder a name, .eg., 
+<em>Physics Notes</em>, and give it a tag, e.g., "physicsnotes"</p>
+<p><img alt="Smart Folder - Make" src="https://i.ibb.co/zmp2pyj/image.png" /></p>
+<h2 id="putting-a-document-in-a-smart-folder">Putting a document in a smart folder</h2>
+<p>We put a document into a smart folder by tagging it.
+For example, the example document displayed above 
+begins like this:</p>
+<pre><code class="language-text">\title{Entropy}
+
+\tags{jxxcarlson:entropy, folder:physicsnotes}
+</code></pre>
+<p>The tag <code>folder:physicsnotes</code> is the tag that puts this
+document into the given folder. In the L0 markup
+language, you would write</p>
+<pre><code class="language-text">| title Entropy
+
+[tags jxxcarlson:entropy, folder:physicsnotes]
+</code></pre>
+<p>Tags must be separated by commas.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../block/" class="btn btn-neutral float-left" title="Blocks"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../collections/" class="btn btn-neutral float-right" title="Collections">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../block/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../collections/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

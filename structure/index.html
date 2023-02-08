@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://jxxcarlson.github.io/docs-scripta/structure/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Document Structure - Scripta User Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Document Structure";
+        var mkdocs_page_input_path = "structure.md";
+        var mkdocs_page_url = "/docs-scripta/structure/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Scripta User Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../tour/">Tour</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Document Structure</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#microlatex">MicroLaTeX</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#l0">L0</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#xmarkdown">XMarkdown</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../inline/">Inline Elements</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../block/">Blocks</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../folders/">Smart Folders</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../collections/">Collections</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../sharing/">Sharing documents</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../chat/">Chat</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../mkdocs/">Welcome to MkDocs</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Scripta User Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Document Structure</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="document-structure">Document Structure</h1>
+<h2 id="microlatex">MicroLaTeX</h2>
+<p>A MicroLaTeX document starts with title line
+and a tag line.  The tag line has the form
+<code>\tags{tag1, tag2, ...}</code>.  The first tag is
+obligatory and has the form 
+<code>USERNAME:Unique-identifier</code>.  The identifier
+is generated automatically from the title.</p>
+<pre><code class="language-text">\title{Notes on Entropy}
+
+\tags{jxxcarlson:notes-on-entropy}
+</code></pre>
+<p>Here is a slightly larger example:</p>
+<pre><code class="language-text">\title{Notes on Entropy}
+
+\tags{jxxcarlson:notes-on-entropy, shannon}
+
+\contents
+
+\section{Entropy in physics}
+
+A single spin has states $U$ and $D$ (up and down). 
+An $N$-spin system s a sequence of $N$ spins, e.g.,
+
+$$
+UUDUDD
+$$
+
+Suppose that there are $N_U$ spins in
+state $U$ and $N_D$ in state $D$.  We call
+$(N_U, N_D)$ a \emph{macrostate} of the system.
+A macrostate generally consists many \emph{microstates}, e.g.,
+
+\begin{code}
+UUUDDD
+UUDUDD
+UDUUDD
+DUUUDD
+...
+DDDUUU
+\end{code}
+
+for the macrostate $(3,3)$.  If $s$ is a macrostate,
+let $\Omega(s)$ be the number of microstates belonging
+to it.  Then
+
+\begin{definition}
+The entropy of the macrostate $s$ is $\log\Omega(s)$.
+\end{defintion}
+
+...
+
+\section{Shannon Entropy}
+</code></pre>
+<p>The structure of this larger example will be familiar
+to LaTeX users.  Nonetheless, there are some 
+differences of syntax and features:</p>
+<ul>
+<li>
+<p>MicroLaTeX is <em>block-structured</em>.  Blocks must have
+a blank line above and below.  Displayed mathematical
+text is a block, where the double dollar signs occupy
+lines of their own.  Any <code>\begin .. \end</code> pair is
+also a block.</p>
+</li>
+<li>
+<p>The <code>\contents</code> macro automatially generates the 
+table of contents, provided that there are at least two
+sections.</p>
+</li>
+<li>
+<p>Note that the <code>\tags</code> macro in this case defines an
+additional tag, <code>shannon</code>.  Such tags are useful in 
+searches.  A search on <code>shannon</code> will retrieve this
+document.</p>
+</li>
+</ul>
+<p><strong>NOTE.</strong> On export, MicroLaTeX is translated to standard LaTeX.</p>
+<h2 id="l0">L0</h2>
+<pre><code class="language-text">| title
+Notes on Entropy
+
+[tags jxxcarlson:notes-on-entropy]
+</code></pre>
+<p>Below is a longer example. L0 is also block-structured,
+where blocks consist of contiguous  <em>non-empty</em> lines
+bounded above and below by a blank line.  There are
+four kinds of blocks:</p>
+<ul>
+<li>Paragraphs</li>
+<li>Ordinary blocks</li>
+<li>Verbatim blocks</li>
+<li>Special blocks</li>
+</ul>
+<p>An ordinary block is a header of the form <code>| NAME</code>
+followed by its body.  The <code>title</code> and <code>contents</code>
+blocks are ordinary. A verbatim block has a header
+of the form <code>|| NAME</code>.  The <code>code</code> block is a verbatim
+block, as are the <code>equation</code> and <code>aligned</code> blocks, corresponding to the
+LaTeX <code>equation</code> and <code>align</code> blocks.  A block
+which starts with the single line <code>$$</code> as in the 
+example below, correponds to the <code>$$ ... $$</code> construct
+in LaTeX. It is a special block.</p>
+<pre><code class="language-text">| title
+Notes on Entropy
+
+[tags jxxcarlson:notes-on-entropy, shannon]
+
+| contents
+
+| section
+Entropy in physics
+
+A single spin has states $U$ and $D$ (up and down). 
+An $N$-spin system s a sequence of $N$ spins, e.g.,
+
+$$
+UUDUDD
+
+
+Suppose that there are $N_U$ spins in
+state $U$ and $N_D$ in state $D$.  We call
+$(N_U, N_D)$ a [emph macrostate] of the system.
+A macrostate generally consists many [emph microstates], e.g.,
+
+|| code
+UUUDDD
+UUDUDD
+UDUUDD
+DUUUDD
+...
+DDDUUU
+
+
+for the macrostate $(3,3)$.  If $s$ is a macrostate,
+let $\Omega(s)$ be the number of microstates belonging
+to it.  Then
+
+| definition
+The entropy of the macrostate $s$ is $\log\Omega(s)$.
+
+...
+
+| section
+Shannon Entropy
+
+</code></pre>
+<p>As with LaTeX, one has <code>section</code>, <code>subsection</code>,
+and <code>subsubsection</code> blocks.  One can also say
+<code>| section 1</code>, <code>| section 2</code>, etc.</p>
+<p><strong>NOTE.</strong> On export, L0 is translated to standard LaTeX.</p>
+<h2 id="xmarkdown">XMarkdown</h2>
+<p>The minimal structure of an XMarkdown document 
+is similar to that of an L0 document.  The rest
+of the text can be normal Markdown, or can be
+XMarkdown, i.e., Markdown + some extensions.</p>
+<pre><code class="language-text">| title
+Notes on Entropy
+
+@[tags jxxcarlson:notes-on-entropy]
+</code></pre>
+<p>Below is a longer XMarkdown documents.  </p>
+<pre><code class="language-text">| title
+Notes on Entropy
+
+@[tags jxxcarlson:xmarkdown-test, shannonx]
+
+| contents
+
+# Entropy in physics
+
+A single spin has states $U$ and $D$ (up and down). 
+An $N$-spin system is a sequence of $N$ spins, e.g.,
+
+$$
+UUDUDD
+$$
+
+Suppose that there are $N_U$ spins in
+state $U$ and $N_D$ in state $D$.  We call
+$(N_U, N_D)$ a *macrostate* of the system.
+A macrostate generally consists many @[emph microstates], e.g.,
+
+|| code
+UUUDDD
+UUDUDD
+UDUUDD
+DUUUDD
+...
+DDDUUU
+
+
+for the macrostate $(3,3)$.  If $s$ is a macrostate,
+let $\Omega(s)$ be the number of microstates belonging
+to it.  Then
+
+| definition
+The entropy of the macrostate $s$ is $\log\Omega(s)$.
+
+...
+
+# Shannon Entropy
+</code></pre>
+<p>In an XMarkdown document, you can use most of standard
+Markdown, e.g., sections and subsections
+with <code>#</code>, <code>##</code>, etc., backticks for inline
+code, triple backticks for blocks of code,
+<code>*italic text*</code> <code>**bold text**</code>, and dashes
+for bullet lists.  For numbered lists, we
+use a leading dot:</p>
+<pre><code class="language-text">. Bread
+
+. Wine
+
+. Cheese
+</code></pre>
+<p>Note that you can freely "borrow" L0 syntax in 
+XMarkdown, e.g, displayed mathematical text, the
+definition and code blocks, etc.</p>
+<p><strong>NOTE.</strong> On export, XMarkdown is translated to standard LaTeX.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../tour/" class="btn btn-neutral float-left" title="Tour"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../inline/" class="btn btn-neutral float-right" title="Inline Elements">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../tour/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../inline/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
